@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+<div class="container">
+    <div class="card card-body" style="border: 1px solid black; box-shadow: 0 0 10px black;">
+        <h2>Liver Disease Predictor Website</h2>
+        <p>These Machine Learning model which predicts Liver disease is trained on large dataset</p>
+        <br>
+        <h2>Model Accuracies:</h2>
+        <ul>
+            <li>Liver Disease Model: <strong>99.64%</strong></li>
+        </ul>
+        <br>
+        <h3>To Predict or Contact</h3> 
+		<ul><li>Please click the Predict on the top-right corner inorder to Predict the Liver Disease</li>
+		<li>Please Click the Contact on the top-right corner to Contact Best Doctors </li>
+		</ul>
+        <br>
+        <div class="row">
+            <div class="col-md-12 card card-body" style="box-shadow: 0 0 5px black; margin: 5px;">
+                <h3>Liver disease Symptoms</h3>
+    <p>Classic symptoms of liver disease include:</p>
+     <ul>
+      <li>nausea</li>
+      <li>vomiting</li>
+      <li>right upper quadrant abdominal pain, and </li>
+      <li>jaundice (a yellow discoloration of the skin due to elevated bilirubin concentrations in the bloodstream).</li>
+    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
